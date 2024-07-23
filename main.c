@@ -46,7 +46,6 @@ int find_buddy(size_t size) {
     while (block_size > size) {
         block_size /= 2;
         order++;
-        //printf("order %d",order);
     }
 
     for (int i = 0; i < BITMAP_SIZE; i++) {
